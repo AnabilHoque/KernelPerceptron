@@ -1,0 +1,4 @@
+# Implementation of a Kernel Perceptron for Handwritten Digit Classification
+We implement various classifiers to recognise hand written digits. Note we generalise the perceptron implementations in two ways, first we use kernel functions so that we may generate a nonlinear separating surfaces and second, we use a majority network of perceptrons so that instead of separating only two classes we may separate k classes. <br />
+For the kernels we consider the polynomial kernel, K(p, q) = (p . q)^d, parameterized by a positive integer d controlling the dimension of the polynomial and the gaussian kernel, K(p, q) = e^(-c||p-q||^2) where c is the width of the kernel. <br />
+To generalise to k classes, we approached this using two strategies, the One vs One approach where we train a classifier for each pair of classes and the One vs All approach where k classifiers are trained, one for each class.
